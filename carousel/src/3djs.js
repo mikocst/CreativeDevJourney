@@ -73,11 +73,9 @@ const clock = new THREE.Clock()
     const tick = () =>{
 const elapsedTime = clock.getElapsedTime()
 
-const positions = particlesBuffGeo.getAttribute('position').array;
+const positions = particlesBuffGeo.getAttribute('position').array; //defining positions in the animation
     for (let i = 0; i < positions.length; i += 3) {
-        positions[i + 1] -= 0.001; // Decrease y-coordinate by 0.01 in each frame
-        // You can adjust the value (-0.01) to change the speed of the animation
-        // For example, decreasing the value will make particles move faster
+        positions[i + 1] -= 0.001; // i + 1 accesses y-coordinate, -= 0.001 decreases each particles position
     }
     particlesBuffGeo.getAttribute('position').needsUpdate = true
         renderer.render(scene, camera)
