@@ -2,6 +2,19 @@ body {
     margin: 0;
     padding: 0;
 }
+html, body {
+    overflow:hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    width:100%;
+    height: 100%;
+}
 
 .gallery-section {
     width: 100%;
@@ -145,6 +158,7 @@ body {
     padding: 0;
     position: absolute;
     width: 100%;
+    z-index: 999;
 
 }
 
@@ -158,4 +172,13 @@ body {
 
 gallery-nav li.gallery-item-selected {
     background: #555;
+}
+
+.gallery-controls-previous,
+.gallery-controls-next {
+    color: white;
+}
+
+.gallery-controls-next {
+    z-index: 1000; /* Or any value higher than the z-index of the canvas */
 }
