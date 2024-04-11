@@ -9,5 +9,9 @@ The repository will include the following:
 - 3JS experiments I dabble with.
 - Eventually some react stuff later down the line. 
 
+If you ever are curious and want to view what I'm coding on a browser, you can view each of the files by clicking on
+the HTML file of the perspective project and running the live server extension via vs code. For web page builds, I plan
+on creating a repository for page or site which will be available to view on GitHub Pages. 
+
 Cheers! 
 Miko / Bam
