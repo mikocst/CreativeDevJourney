@@ -160,4 +160,8 @@ nav {
         align-items: center;
         justify-content: center;
     }
+
+    button {
+        min-width: 100%;
+    }
   }
