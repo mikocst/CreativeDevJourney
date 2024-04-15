@@ -15,16 +15,15 @@ h1 {
 
 p {
     color: white;
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
 
-section {
-    padding: 100px;
+.menu-button {
+    display: none;
 }
 
 .hero {
-    width: 100%;
+    width: 100dvw;
     height: 100dvh;
     background-image: url("/unist-fan-page/static/hero-bg.png");
     background-repeat: no-repeat;
@@ -82,6 +81,7 @@ nav {
   }
 
 .nav-container ul {
+    width: 100%;
     justify-content: flex-end;
     align-items: center;
     list-style-type: none; /* Remove bullet points */
@@ -103,13 +103,13 @@ nav {
     transform: scale(1.5)
 }
 
-.nav-container > ul:first-child > li:first-child:not(.sidebar) {
-    margin-right: auto;
-}
 
 .nav-container > ul:not(.sidebar) {
     display: flex;
-    flex-direction: row;
+}
+
+.nav-menu  li:first-child {
+    margin-right: auto;
 }
 
 .sidebar {
@@ -137,4 +137,15 @@ nav {
 
   .sidebar a {
     width:100%;
+  }
+
+
+  @media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
   }
