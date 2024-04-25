@@ -35,14 +35,16 @@
         <div class = "hero-content">
         <img class = "responsive" src="/unist-fan-page/static/hero-logo.svg">
         <p>Unlock your potential and battle your</br>
-        oppoonents in the grid. Front end passion project.</p>
+        oppoonents in the grid. Front end passion project.</br>
+        Please support the official release.
+        </p>
         </div>
         <div class="button-wrapper">
             <button>BUY NOW!</button>
             <button class = "secondary">ARC WORLD TOUR</button>
         </div>
         </section>
-        <section>
+        <section class = "features">
             <div class = "container">
                 <h2>FROM LATE:CLR TO SYS:CELES</h2>
                 <div>
@@ -50,12 +52,12 @@
                         <div class = "svg-container">
                             <img class = "responsive" src = "../static/image 23.svg">
                         </div>
-                    
-                        <div class = 'text-content'>
+                     <div class = 'text-content'>
                             <h3>CELESTIAL VORPAL</h3>
                             <p>If you have 6 blocks of GRD and win vorpal, celestial vorpal </br> rewards you with 12 grd blocks giving you the whole GRD </br> granting you bonuses to your character for a set</br>  amount of time.</p>
                         </div>
                     </div>
+
                         <div class = "content" id="content2">
                             <div class = 'text-content'>
                                 <h3>Creeping Edge</h3>
@@ -65,6 +67,36 @@
                                 <img class = "responsive" src = "../static/image 24.svg">
                             </div>
                         </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "character-select">
+            <div class = "character-previews">
+                <h2>NEWCOMERS TO THE GRD</h2>
+                <div class = "character-button-wrap">
+                    <div class = "character-button-top">
+                        <button class = "char-btn" id = "tsurugi" onclick = "changeCharacter('tsurugi')"><img src = "../static/characters/tsurugi-portrait.svg"></button>
+                        <button class = "char-btn" id = "kaguya" onclick = "changeCharacter('kaguya')"><img src = "../static/characters/kaguya-portrait.svg"></button>
+                        <button class = "char-btn" id = "kuon" onclick = ""><img src = "../static/characters/kuon-portrait.svg"></button>
+                    </div>
+                    <div class = "character-button-bottom">
+                        <button class = "char-btn" id = "uzuki" onclick = ""><img src="../static/characters/uzuki-portrait.svg"></button>
+                        <button class = "char-btn" id = "ogre" onclick = ""><img src="../static/characters/ogre-portrait.svg"></button>
+                        <button class = "char-btn" id = "izumi" onclick = ""><img src="../static/characters/izumi-portrait.svg"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "character-display">
+                <div id = "char-por-wrap">
+                    <img id = "full" src = "../static/characters/tsurugi-full.svg" alt = "">
+                </div>
+
+                <div class = "character-details">
+                    <h3 id = "name">Tsurugi</h3>
+                    <div id = "status"></div>
+                    <p id = "character-bio"></p>
                 </div>
             </div>
         </section>
