@@ -78,12 +78,12 @@
                     <div class = "character-button-top">
                         <button class = "char-btn" id = "tsurugi" onclick = "changeCharacter('tsurugi')"><img src = "../static/characters/tsurugi-portrait.svg"></button>
                         <button class = "char-btn" id = "kaguya" onclick = "changeCharacter('kaguya')"><img src = "../static/characters/kaguya-portrait.svg"></button>
-                        <button class = "char-btn" id = "kuon" onclick = ""><img src = "../static/characters/kuon-portrait.svg"></button>
+                        <button class = "char-btn" id = "kuon" onclick = "changeCharacter('kuon')"><img src = "../static/characters/kuon-portrait.svg"></button>
                     </div>
                     <div class = "character-button-bottom">
-                        <button class = "char-btn" id = "uzuki" onclick = ""><img src="../static/characters/uzuki-portrait.svg"></button>
-                        <button class = "char-btn" id = "ogre" onclick = ""><img src="../static/characters/ogre-portrait.svg"></button>
-                        <button class = "char-btn" id = "izumi" onclick = ""><img src="../static/characters/izumi-portrait.svg"></button>
+                        <button class = "char-btn" id = "uzuki" onclick = "changeCharacter('uzuki')"><img src="../static/characters/uzuki-portrait.svg"></button>
+                        <button class = "char-btn" id = "ogre" onclick = "changeCharacter('ogre')"><img src="../static/characters/ogre-portrait.svg"></button>
+                        <button class = "char-btn" id = "izumi" onclick = "changeCharacter('izumi')"><img src="../static/characters/izumi-portrait.svg"></button>
                     </div>
                 </div>
             </div>
@@ -93,9 +93,10 @@
                     <img id = "full" src = "../static/characters/tsurugi-full.svg" alt = "">
                 </div>
 
-                <div class = "character-details">
+                <div id = "details" class = "character-details">
                     <h3 id = "name">Tsurugi</h3>
-                    <div id = "status"></div>
+                    <div class = "status" id = "status">
+                    </div>
                     <p id = "character-bio"></p>
                 </div>
             </div>
