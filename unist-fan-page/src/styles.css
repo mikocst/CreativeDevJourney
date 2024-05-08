@@ -176,9 +176,6 @@ nav {
     width:100%;
   }
 
-
- 
-
   .features {
     height: auto;
   }
@@ -227,9 +224,8 @@ nav {
 
   .char-btn {
     padding: 0;
+    margin: 0;
     background-color: rgba(0,0,0,0);
-    margin-right: 8px;
-    margin-left: 8px;
     cursor: pointer;
   }
 
@@ -307,11 +303,22 @@ nav {
         flex-direction: column-reverse;
     }
 
+    .character-previews {
+        margin: 16px;
+    }
+
     .character-button-wrap {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .char-btn img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .character-button-top {
@@ -322,16 +329,20 @@ nav {
         flex-direction: column;
     }
 
-    svg {
-        height: auto;
-        width: auto;
-    }   
-
     .character-display {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .char-por-wrap img {
+        max-width: 100%;
+        height:auto;
+        display: block;
+        margin: 0 auto;
     }
 
     .character-details {
