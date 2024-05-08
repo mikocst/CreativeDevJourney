@@ -177,55 +177,7 @@ nav {
   }
 
 
-  @media (max-width: 800px) {
-    .hideOnMobile {
-        display: none;
-    }
-
-    .menu-button {
-        display: block;
-    }
-
-    .button-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    button {
-        min-width: 100%;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .svg-container {
-        width: 100%;
-        resize: both;
-        overflow: auto;
-    }
-
-    h3 {
-        text-align: center;
-        font-size: 32px;
-    }
-
-    p {
-        font-size: 16px;
-        max-width: 95%;
-        text-align: center;
-    }
-
-    #content2 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-  }
+ 
 
   .features {
     height: auto;
@@ -306,4 +258,87 @@ nav {
     text-align: center;
     margin-bottom: 8px;
     border-radius: 12px;
+  }
+
+
+
+  @media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .svg-container {
+        width: 100%;
+        resize: both;
+        overflow: auto;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 95%;
+        text-align: center;
+    }
+
+    #content2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .character-button-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .character-button-top {
+       flex-direction: column;
+    }
+
+    .character-button-bottom {
+        flex-direction: column;
+    }
+
+    svg {
+        height: auto;
+        width: auto;
+    }   
+
+    .character-display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .character-details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
   }
