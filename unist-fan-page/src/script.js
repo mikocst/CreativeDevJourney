@@ -1,12 +1,19 @@
+const sidebar = document.querySelector(".sidebar")
+const menuBtn = document.querySelector(".menu-button")
+
 function showSideBar() {
-    const sidebar = document.querySelector(".sidebar")
     sidebar.style.display = "flex"
 }
 
 function hideSideBar() {
-    const sidebar = document.querySelector(".sidebar")
     sidebar.style.display = "none"
 }
+
+document.addEventListener('click', e => {
+    if (!menuBtn.contains(e.target) && e.target !== menuBtn){
+        sidebar.style.display = "none"
+    }
+})
 
 let changeCharacter = (character) => {
     {

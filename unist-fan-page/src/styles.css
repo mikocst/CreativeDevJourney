@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #030517;
     overflow-x: hidden;
@@ -98,7 +102,12 @@ button {
     border: none;
 }
 
+.primary {
+    width: 100%;
+}
+
 .secondary {
+    width: 100%;
     background-color: rgba(255, 255, 255, .2)
 }
 
@@ -352,4 +361,8 @@ nav {
         align-items: center;
         justify-content: center;
     }
+  }
+
+  .hide {
+    display: none;
   }
